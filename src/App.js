@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import Login from "./container/Login/Login";
+import Signup from "./container/Signup/Signup";
+
+// CLASS COMPONENTS
+// import LoginClass from "./container/Login-class/Login";
+// import SignupClass from "./container/Signup-class/Signup";
+
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [activePage, setActivePage] = useState("login");
+
+    const onRedirect = (page) => {
+        setActivePage(page);
+    };
+
+    return (
+        <div className="background">{activePage === "login" ? <Login onRedirect={onRedirect} /> : <Signup onRedirect={onRedirect} />}</div>
+    );
 }
 
 export default App;

@@ -1,0 +1,33 @@
+.input-box {
+    position: relative;
+}
+
+.input-box > input {
+    width: 100%;
+    padding: 15px 10px 15px 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.input-box > img,
+.input-box > img.eye-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box > img.eye-icon {
+    left: initial;
+    right: 10px;
+    cursor: pointer;
+}
+
+.input-box > p {
+    color: rgb(211, 6, 6);
+    font-size: 11px;
+    position: absolute;
+}
