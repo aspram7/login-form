@@ -1,13 +1,13 @@
-import { useState } from "react";
-
+import React from "react";
+import Header from "./container/Header/Header";
+import Layout from "./components/Layout/Layout";
 import Login from "./container/Login/Login";
 import Signup from "./container/Signup/Signup";
 
-// CLASS COMPONENTS
-// import LoginClass from "./container/Login-class/Login";
-// import SignupClass from "./container/Signup-class/Signup";
-
+import Footer from "./container/Footer/Footer";
 import "./App.css";
+
+import { useState } from "react";
 
 function App() {
     const [activePage, setActivePage] = useState("login");
@@ -17,7 +17,15 @@ function App() {
     };
 
     return (
-        <div className="background">{activePage === "login" ? <Login onRedirect={onRedirect} /> : <Signup onRedirect={onRedirect} />}</div>
+        <div>
+            <Header onRedirectToHome={onRedirect} />
+            <Layout>
+                <div className="background">
+                    {activePage === "login" ? <Login onRedirect={onRedirect} /> : <Signup onRedirect={onRedirect} />}
+                </div>
+            </Layout>
+            <Footer />
+        </div>
     );
 }
 
