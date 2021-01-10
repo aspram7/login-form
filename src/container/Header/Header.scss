@@ -1,0 +1,44 @@
+.header {
+    width: 100%;
+    border-bottom: 1px solid rgb(44, 44, 44);
+    position: fixed;
+    z-index: 2;
+    background-color: #ffffff;
+    top: 0;
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            img {
+                width: 80px;
+                cursor: pointer;
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+                margin-bottom: 0;
+
+                li {
+                    list-style: none;
+                    margin-left: 15px;
+                    color: rgb(80, 80, 80);
+                    font-size: 20px;
+                    cursor: pointer;
+                    font-weight: 500;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
