@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Input from "../../components/Input/Input";
-import Button from "../../components/Button/Button";
+import Input from "../../../components/Input/Input";
+import Button from "../../../components/Button/Button";
 
-import user from "../../assets/icons/user.svg";
-import email from "../../assets/icons/email.svg";
-import lock from "../../assets/icons/lock.svg";
+import user from "../../../assets/icons/user.svg";
+import email from "../../../assets/icons/email.svg";
+import lock from "../../../assets/icons/lock.svg";
 
-import { validateEmail, validatePassword } from "../../utils/validate";
+import { validateEmail, validatePassword } from "../../../utils/validate";
 
 import "./Signup.css";
 
