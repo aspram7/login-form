@@ -1,0 +1,9 @@
+.products {
+    padding: 50px 0;
+    border-bottom: 1px solid rgb(218, 218, 218);
+
+    .container-products {
+        display: flex;
+        justify-content: space-between;
+    }
+}
