@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./container/Header/Header";
 import Layout from "./components/Layout/Layout";
-import Login from "./container/Login/Login";
-import Signup from "./container/Signup/Signup";
+import Login from "./container/Auth/Login/Login";
+import Signup from "./container/Auth/Signup/Signup";
 
 import Footer from "./container/Footer/Footer";
 import "./App.css";
